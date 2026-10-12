@@ -2,29 +2,41 @@
 
 /* rubik-300 - latin */
 @font-face {
-	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-display: swap;
 	font-family: 'Rubik';
 	font-style: normal;
 	font-weight: 300;
-	src: url('../fonts/rubik-v31-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	src: url('../fonts/rubik-v31-latin-300.woff2') format('woff2');
 }
 /* rubik-regular - latin */
 @font-face {
-	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-display: swap;
 	font-family: 'Rubik';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../fonts/rubik-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	src: url('../fonts/rubik-v31-latin-regular.woff2') format('woff2');
 }
 /* rubik-500 - latin */
 @font-face {
-	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-display: swap;
 	font-family: 'Rubik';
 	font-style: normal;
 	font-weight: 500;
-	src: url('../fonts/rubik-v31-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	src: url('../fonts/rubik-v31-latin-500.woff2') format('woff2');
 }
 
 @theme {
 	--font-sans: 'Rubik', sans-serif;
+	--color-primary-purple-600: hsl(246, 80%, 60%);
+	--color-primary-orange-300: hsl(15, 100%, 70%);
+	--color-primary-blue-300: hsl(195, 74%, 62%);
+	--color-primary-pink-400: hsl(348, 100%, 68%);
+	--color-primary-green-400: hsl(145, 58%, 55%);
+	--color-primary-purple-700: hsl(264, 64%, 52%);
+	--color-primary-yellow-300: hsl(43, 84%, 65%);
+
+	--color-neutral-navy-950: hsl(226, 43%, 10%);
+	--color-neutral-navy-900: hsl(235, 46%, 20%);
+	--color-neutral-purple-500: hsl(235, 45%, 61%);
+	--color-neutral-navy-200: hsl(236, 100%, 87%);
 }
