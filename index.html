@@ -1,20 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <link rel="stylesheet" href="./dist/styles.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body></body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- prettier-ignore -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<title>Frontend Mentor | Time tracking dashboard</title>
+		<link rel="stylesheet" href="./dist/styles.css" />
+	</head>
+	<body class="bg-neutral-navy-950 text-white py-20 px-6">
+		<main>
+			<header>
+				<div
+					class="headings bg-primary-purple-600 p-8 grid gap-6 grid-cols-[24.3346%_1fr] items-center rounded-[0.938rem]"
+				>
+					<div class="outline-white outline-2 rounded-full">
+						<img src="./images/image-jeremy.png" alt="" class="w-full" />
+					</div>
+					<h1>
+						<span class="text-neutral-navy-200 block text-[0.938rem] leading-6">Report for</span>
+						<span class="text-[1.5rem] leading-7 font-light">Jeremy Robson</span>
+					</h1>
+				</div>
+				<div class="buttons">
+					<button>Daily</button>
+					<button>Weekly</button>
+					<button>Monthly</button>
+				</div>
+			</header>
+		</main>
+	</body>
 </html>
