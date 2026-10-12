@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Frontend Mentor - Time tracking dashboard",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./css/style.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./css/style.css --minify"
+    "dev": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify"
   },
   "keywords": [],
   "author": "",
