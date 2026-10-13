@@ -8,24 +8,32 @@
 		<title>Frontend Mentor | Time tracking dashboard</title>
 		<link rel="stylesheet" href="./dist/styles.css" />
 	</head>
-	<body class="bg-neutral-navy-950 text-white py-20 px-6">
-		<main>
+	<body
+		class="bg-neutral-navy-950 text-white py-20 px-6 md:grid md:min-h-screen place-items-center"
+	>
+		<main class="w-full md:max-w-[85%] lg:max-w-[80.1725%]">
 			<header>
 				<div
-					class="headings bg-primary-purple-600 p-8 grid gap-6 grid-cols-[24.3346%_1fr] items-center rounded-[0.938rem]"
+					class="headings lg:block bg-primary-purple-600 p-8 grid gap-6 grid-cols-[4rem_1fr] items-center rounded-[0.938rem]"
 				>
-					<div class="outline-white outline-2 rounded-full">
+					<div class="outline-white outline-2 rounded-full lg:w-19.5">
 						<img src="./images/image-jeremy.png" alt="" class="w-full" />
 					</div>
-					<h1>
-						<span class="text-neutral-navy-200 block text-[0.938rem] leading-6">Report for</span>
-						<span class="text-[1.5rem] leading-7 font-light">Jeremy Robson</span>
+					<h1 class="lg:mt-10 lg:w-min">
+						<span
+							class="text-neutral-navy-200 block text-[0.938rem] leading-6 lg:leading-4.5"
+							>Report for</span
+						>
+						<span
+							class="text-[1.5rem] lg:text-[2.5rem] leading-7 font-light lg:leading-11.75 block"
+							>Jeremy Robson
+						</span>
 					</h1>
 				</div>
-				<div class="buttons">
-					<button>Daily</button>
-					<button>Weekly</button>
-					<button>Monthly</button>
+				<div class="buttons pt-6 pb-6 grid grid-cols-3" role="group" aria-label="Timeframe">
+					<button aria-pressed="false" class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 outline-offset-2 outline-white">Daily</button>
+					<button aria-pressed="true" class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 outline-offset-2 outline-white">Weekly</button>
+					<button aria-pressed="false" class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 outline-offset-2 outline-white">Monthly</button>
 				</div>
 			</header>
 		</main>
