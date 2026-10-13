@@ -9,10 +9,10 @@
 		<link rel="stylesheet" href="./dist/styles.css" />
 	</head>
 	<body
-		class="bg-neutral-navy-950 text-white py-20 px-6 md:grid md:min-h-screen place-items-center"
+		class="bg-neutral-navy-950 text-white py-20 px-6 md:grid md:min-h-screen md:place-items-center"
 	>
 		<main class="w-full md:max-w-[85%] lg:max-w-[80.1725%]">
-			<header>
+			<header class="bg-neutral-navy-900 rounded-[0.938rem]">
 				<div
 					class="headings lg:block bg-primary-purple-600 p-8 grid gap-6 grid-cols-[4rem_1fr] items-center rounded-[0.938rem]"
 				>
@@ -26,16 +26,88 @@
 						>
 						<span
 							class="text-[1.5rem] lg:text-[2.5rem] leading-7 font-light lg:leading-11.75 block"
-							>Jeremy Robson
+						>
+							Jeremy Robson
 						</span>
 					</h1>
 				</div>
-				<div class="buttons pt-6 pb-6 grid grid-cols-3" role="group" aria-label="Timeframe">
-					<button aria-pressed="false" class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 outline-offset-2 outline-white">Daily</button>
-					<button aria-pressed="true" class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 outline-offset-2 outline-white">Weekly</button>
-					<button aria-pressed="false" class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 outline-offset-2 outline-white">Monthly</button>
+				<div
+					class="buttons pt-6 pb-6 grid grid-cols-3 bg-neutral-navy-900 rounded-[0.938rem] md:max-w-[56.0458%] mx-auto"
+					role="group"
+					aria-label="Timeframe"
+				>
+					<button
+						aria-pressed="false"
+						class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+					>
+						Daily
+					</button>
+					<button
+						aria-pressed="true"
+						class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+					>
+						Weekly
+					</button>
+					<button
+						aria-pressed="false"
+						class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+					>
+						Monthly
+					</button>
 				</div>
 			</header>
+
+			<div class="cards mt-6">
+				<div
+					class="card-outer pt-9.5 bg-primary-orange-300 rounded-[0.938rem]"
+					data-title="Work"
+				>
+					<div
+						class="card-inner rounded-[0.938rem] bg-neutral-navy-900 p-6 hover:not-[:has(button:hover)]:bg-neutral-navy-800 transition-colors duration-150"
+					>
+						<div class="top flex w-full justify-between items-center">
+							<h2 class="text-[1.125rem] leading-6 font-medium">Work</h2>
+
+							<button
+								class="cursor-pointer group px-1 py-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+								aria-label="see details for Work"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="21"
+									height="5"
+									viewBox="0 0 21 5"
+									fill="none"
+									class="text-neutral-navy-200 group-hover:text-white transition-colors duration-150"
+									aria-hidden="true"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M5 2.5C5 3.88071 3.88071 5 2.5 5C1.11929 5 0 3.88071 0 2.5C0 1.11929 1.11929 0 2.5 0C3.88071 0 5 1.11929 5 2.5ZM13 2.5C13 3.88071 11.8807 5 10.5 5C9.11929 5 8 3.88071 8 2.5C8 1.11929 9.11929 0 10.5 0C11.8807 0 13 1.11929 13 2.5ZM18.5 5C19.8807 5 21 3.88071 21 2.5C21 1.11929 19.8807 0 18.5 0C17.1193 0 16 1.11929 16 2.5C16 3.88071 17.1193 5 18.5 5Z"
+										fill="currentColor"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div
+							class="bottom mt-2 md:mt-4 flex w-full justify-between items-center md:block"
+						>
+							<p
+								class="hours text-[2rem] md:text-[3.5rem] leading-9.5 md:leading-16.5 font-light"
+							>
+								32hrs
+							</p>
+							<p
+								class="last-week text-[0.938rem] leading-4.5 text-neutral-navy-200 md:mt-2"
+							>
+								Last Week - 36hrs
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 	</body>
 </html>
