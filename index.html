@@ -11,8 +11,8 @@
 	<body
 		class="bg-neutral-navy-950 text-white py-20 px-6 md:grid md:min-h-screen md:place-items-center"
 	>
-		<main class="w-full md:max-w-[85%] lg:max-w-[80.1725%]">
-			<header class="bg-neutral-navy-900 rounded-[0.938rem]">
+		<main class="w-full md:max-w-[85%] lg:max-w-[80.1725%] lg:grid lg:grid-cols-4 lg:gap-8">
+			<header class="bg-neutral-navy-900 rounded-[0.938rem] lg:row-span-2">
 				<div
 					class="headings lg:block bg-primary-purple-600 p-8 grid gap-6 grid-cols-[4rem_1fr] items-center rounded-[0.938rem]"
 				>
@@ -32,32 +32,32 @@
 					</h1>
 				</div>
 				<div
-					class="buttons pt-6 pb-6 grid grid-cols-3 bg-neutral-navy-900 rounded-[0.938rem] md:max-w-[56.0458%] mx-auto"
+					class="buttons pt-6 pb-6 grid grid-cols-3 bg-neutral-navy-900 rounded-[0.938rem] md:max-w-[56.0458%] mx-auto lg:max-w-none lg:grid-cols-1 lg:gap-6 lg:p-8"
 					role="group"
 					aria-label="Timeframe"
 				>
 					<button
 						aria-pressed="false"
-						class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white lg:text-left"
 					>
 						Daily
 					</button>
 					<button
 						aria-pressed="true"
-						class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white lg:text-left"
 					>
 						Weekly
 					</button>
 					<button
 						aria-pressed="false"
-						class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white lg:text-left"
 					>
 						Monthly
 					</button>
 				</div>
 			</header>
 
-			<div class="cards mt-6">
+			<div class="cards mt-6 lg:mt-0 grid gap-6 md:grid-cols-3 lg:grid-cols-subgrid lg:grid-rows-subgrid lg:col-span-3 lg:row-span-2 lg:gap-[inherit]">
 				<!-- work -->
 				<div
 					class="card-outer pt-9.5 md:pt-8 lg:pt-11 bg-primary-orange-300 rounded-[0.938rem] bg-[url(../images/icon-work.svg)] bg-no-repeat bg-position-[top_-1rem_right_1rem]"
