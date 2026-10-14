@@ -7,6 +7,7 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 		<title>Frontend Mentor | Time tracking dashboard</title>
 		<link rel="stylesheet" href="./dist/styles.css" />
+		<script src="./js/main.js" defer></script>
 	</head>
 	<body
 		class="bg-neutral-navy-950 text-white py-20 px-6 md:grid md:min-h-screen md:place-items-center"
@@ -39,18 +40,21 @@
 					<button
 						aria-pressed="false"
 						class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white lg:text-left"
+						data-period="Daily"
 					>
 						Daily
 					</button>
 					<button
 						aria-pressed="true"
 						class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white lg:text-left"
+						data-period="Weekly"
 					>
 						Weekly
 					</button>
 					<button
 						aria-pressed="false"
 						class="cursor-pointer text-[1.125rem] leading-[1.313rem] text-neutral-purple-500 aria-pressed:text-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white lg:text-left"
+						data-period="Monthly"
 					>
 						Monthly
 					</button>
