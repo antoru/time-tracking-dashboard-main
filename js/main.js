@@ -20,14 +20,19 @@ async function init() {
 		console.log('activities', activities);
 
 		const buttonsContainer = document.querySelector('.buttons');
+		const buttonsNodelist = buttonsContainer.querySelectorAll('button');
 
 		buttonsContainer.addEventListener('click', (event) => {
-			const button = event.target.closest('button');
+			const clickedButton = event.target.closest('button');
+			if (!clickedButton) return;
 
-			if (!button) return;
+			buttonsNodelist.forEach((button) => {
+				button.setAttribute('aria-pressed', 'false');
+			});
 
-			const period = button.dataset.period; // "daily", "weekly", or "monthly"
+			clickedButton.setAttribute('aria-pressed', 'true');
 
+			const period = clickedButton.dataset.period; // "daily", "weekly", or "monthly"
 			console.log(period);
 		});
 	} catch (error) {
