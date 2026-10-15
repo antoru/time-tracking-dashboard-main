@@ -6,13 +6,23 @@
 		<!-- prettier-ignore -->
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 		<title>Frontend Mentor | Time tracking dashboard</title>
+
+		<link
+			rel="preload"
+			as="image"
+			href="./images/icon-work.svg"
+			fetchpriority="high"
+		/>
+
 		<link rel="stylesheet" href="./dist/styles.css" />
 		<script src="./js/main.js" defer></script>
 	</head>
 	<body
 		class="bg-neutral-navy-950 text-white py-20 px-6 md:grid md:min-h-screen md:place-items-center"
 	>
-		<main class="w-full md:max-w-[85%] lg:max-w-[80.1725%] lg:grid lg:grid-cols-4 lg:gap-8">
+		<main
+			class="w-full md:max-w-[85%] lg:max-w-[80.1725%] lg:grid lg:grid-cols-4 lg:gap-8"
+		>
 			<header class="bg-neutral-navy-900 rounded-[0.938rem] lg:row-span-2">
 				<div
 					class="headings lg:block bg-primary-purple-600 p-8 grid gap-6 grid-cols-[4rem_1fr] items-center rounded-[0.938rem]"
@@ -61,7 +71,9 @@
 				</div>
 			</header>
 
-			<div class="cards mt-6 lg:mt-0 grid gap-6 md:grid-cols-3 lg:grid-cols-subgrid lg:grid-rows-subgrid lg:col-span-3 lg:row-span-2 lg:gap-[inherit]">
+			<div
+				class="cards mt-6 lg:mt-0 grid gap-6 md:grid-cols-3 lg:grid-cols-subgrid lg:grid-rows-subgrid lg:col-span-3 lg:row-span-2 lg:gap-[inherit]"
+			>
 				<!-- work -->
 				<div
 					class="card-outer pt-9.5 md:pt-8 lg:pt-11 bg-primary-orange-300 rounded-[0.938rem] bg-[url(../images/icon-work.svg)] bg-no-repeat bg-position-[top_-1rem_right_1rem]"
