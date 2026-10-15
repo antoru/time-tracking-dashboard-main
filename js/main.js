@@ -1,3 +1,9 @@
+const previousLabels = {
+	daily: 'Yesterday',
+	weekly: 'Last Week',
+	monthly: 'Last Month',
+};
+
 async function getData() {
 	const url = './data.json';
 
@@ -14,8 +20,9 @@ function returnHourString(hour) {
 }
 
 function updateCards(activities, period, cardsContainer) {
-	activities.forEach((activity) => {
+	const previousLabel = previousLabels[period];
 
+	activities.forEach((activity) => {
 		const activityTitle = activity.title;
 		const activityTimeframes = activity.timeframes;
 		const timeFrameToPrint = activityTimeframes[period];
@@ -34,13 +41,12 @@ function updateCards(activities, period, cardsContainer) {
 		const previousElement = targetCard.querySelector('.previous');
 
 		currentElement.textContent = `${currentToPrint}${currentStringToPrint}`;
-		previousElement.textContent = `Last Week - ${previousToPrint}${previousStringToPrint}`;
+		previousElement.textContent = `${previousLabel} - ${previousToPrint}${previousStringToPrint}`;
 	});
 }
 
 async function init() {
 	try {
-
 		const cardsContainer = document.querySelector('.cards');
 		const buttonsContainer = document.querySelector('.buttons');
 		const buttonsNodelist = buttonsContainer.querySelectorAll('button');
