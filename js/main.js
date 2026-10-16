@@ -46,10 +46,12 @@ function updateCards(activities, period, cardsContainer) {
 }
 
 async function init() {
+	const cardsContainer = document.querySelector('.cards');
+	const errorElement = document.getElementById('fetch-error');
+	const buttonsContainer = document.querySelector('.buttons');
+	const buttonsNodelist = buttonsContainer.querySelectorAll('button');
+
 	try {
-		const cardsContainer = document.querySelector('.cards');
-		const buttonsContainer = document.querySelector('.buttons');
-		const buttonsNodelist = buttonsContainer.querySelectorAll('button');
 		const activities = await getData();
 
 		buttonsContainer.addEventListener('click', (event) => {
@@ -68,6 +70,10 @@ async function init() {
 		});
 	} catch (error) {
 		console.error(error);
+		errorElement.textContent = 'Unable to load data. Please reload the page.';
+		buttonsNodelist.forEach((button) => {
+			button.disabled = true;
+		});
 	}
 }
 
