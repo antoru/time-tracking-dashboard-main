@@ -93,6 +93,11 @@ My first reaction to the LCP warning was to preload all 7 images. But if everyth
 
 I plan to keep building challenges and personal projects, both to grow my portfolio and to become a better developer. My next goal is to start using a modern framework (React or Next.js) and TypeScript. Only after that will I move to the backend, with the goal of understanding and building a full-stack project from start to finish.
 
+As my first concrete experiments, I want to come back to this same dashboard:
+
+- **Rebuild the cards in React** as a single component generated from `data.json`. Right now the 6 cards are written by hand in the HTML, and each one has a `data-title` I have to keep in sync with the JSON.
+- **Add TypeScript**, with types for the data and for the selected period. During the project I wrote `data-period="Daily"` instead of `"daily"` and only noticed it in the browser. I want to see whether types catch mistakes like this earlier.
+
 ### Useful resources
 
 - [google-webfonts-helper](https://gwfh.mranftl.com/fonts) - To download Rubik as woff2 files with a ready-made `@font-face` snippet.
