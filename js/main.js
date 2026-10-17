@@ -45,10 +45,15 @@ function updateCards(activities, period, cardsContainer) {
 	});
 }
 
+function updateStatusRegion(period, statusRegion) {
+	statusRegion.textContent = `Showing ${period} stats`;
+}
+
 async function init() {
 	const cardsContainer = document.querySelector('.cards');
 	const errorElement = document.getElementById('fetch-error');
 	const buttonsContainer = document.querySelector('.buttons');
+	const statusRegion = document.getElementById('status-region');
 	const buttonsNodelist = buttonsContainer.querySelectorAll('button');
 
 	try {
@@ -67,6 +72,8 @@ async function init() {
 			const period = clickedButton.dataset.period; // "daily", "weekly", or "monthly"
 
 			updateCards(activities, period, cardsContainer);
+
+			updateStatusRegion(period, statusRegion);
 		});
 	} catch (error) {
 		console.error(error);
